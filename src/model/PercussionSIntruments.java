@@ -30,15 +30,15 @@ public class PercussionSIntruments extends StringInstruments{
 	
 
 	//set
-	public void setBox(Box aBox){
+	public void setBox(Box box){
 		this.box = box;
 	}
 
-	public void setKeyboard(Keyboard aKeyboard){
+	public void setKeyboard(Keyboard keyboard){
 		this.keyboard = keyboard;
 	}
 
-	public void setOrientation(Orientation aOrientation){
+	public void setOrientation(Orientation orientation){
 		this.orientation = orientation;
 	}
 

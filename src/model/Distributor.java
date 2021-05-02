@@ -31,18 +31,15 @@ public class Distributor{
 
 
 	//set
-	public void setName(String aName){
+	public void setName(String name){
 		this.name = name;
 	} 
 
-	public void setAddress(String aAddress){
+	public void setAddress(String address){
 		this.address = address;
 	} 
 
-	public void setPhone(String aPhone){
+	public void setPhone(String phone){
 		this.phone = phone;
 	}
-
-	//to String
-
 }

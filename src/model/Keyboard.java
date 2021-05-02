@@ -31,15 +31,15 @@ public class Keyboard{
 	
 
 	//set
-	public void setAmountOctavas(int aAmountOctavas){
+	public void setAmountOctavas(int amountOctavas){
 		this.amountOctavas = amountOctavas;
 	}
 
-	public void setMaterial(String aMaterial){
+	public void setMaterial(String material){
 		this.material = material;
 	}
 
-	public void setDimensionsKeyboard(Dimension aDimensionsKeyboard){
+	public void setDimensionsKeyboard(Dimension dimensionsKeyboard){
 		this.dimensionsKeyboard = dimensionsKeyboard;
 	}
 

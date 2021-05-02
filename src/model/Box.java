@@ -17,7 +17,7 @@ public class Box{
 	
 
 	//set
-	public void setDimensionsBox(Dimension aDimensionsBox){
+	public void setDimensionsBox(Dimension dimensionsBox){
 		this.dimensionsBox = dimensionsBox;
 	}
 

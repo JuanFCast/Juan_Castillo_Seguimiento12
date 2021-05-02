@@ -31,18 +31,15 @@ public class Dimension{
 
 
 	//set
-	public void setHight(double aHight){
+	public void setHight(double hight){
 		this.hight = hight;
 	} 
 
-	public void setLength(double aLength){
+	public void setLength(double length){
 		this.length = length;
 	} 
 
-	public void setWidth(double aWidth){
+	public void setWidth(double width){
 		this.width = width;
 	}
-
-	//to String
-
 }

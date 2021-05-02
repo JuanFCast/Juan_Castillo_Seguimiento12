@@ -42,23 +42,23 @@ public class Instruments{
 
 
 	//set
-	public void setName(double aName){
+	public void setName(double name){
 		this.name = name;
 	} 
 
-	public void setLength(double aIdNumber){
+	public void setLength(double idNumber){
 		this.idNumber = idNumber;
 	} 
 
-	public void setDimensions(Dimension aDimensions){
+	public void setDimensions(Dimension dimensions){
 		this.dimensions = dimensions;
 	}
 
-	public void setDistributorCompany(Distributor aDistributorCompany){
+	public void setDistributorCompany(Distributor distributorCompany){
 		this.distributorCompany = distributorCompany;
 	}
 
-	public void setPlaces(Place aPlaces){
+	public void setPlaces(Place places){
 		this.places = places;
 	}
 
