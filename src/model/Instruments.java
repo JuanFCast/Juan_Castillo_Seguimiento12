@@ -42,7 +42,7 @@ public class Instruments{
 
 
 	//set
-	public void setNameh(double aName){
+	public void setName(double aName){
 		this.name = name;
 	} 
 
