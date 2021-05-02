@@ -42,4 +42,13 @@ public class Dimension{
 	public void setWidth(double width){
 		this.width = width;
 	}
+
+	//to String
+	public String toString(){
+		String answer = "\nAlto: " + hight +
+		"\nLargo: " + length +
+		"\nAncho: " + width;
+
+		return answer;
+	}
 }

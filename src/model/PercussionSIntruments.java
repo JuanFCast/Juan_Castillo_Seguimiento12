@@ -42,4 +42,14 @@ public class PercussionSIntruments extends StringInstruments{
 		this.orientation = orientation;
 	}
 
+
+	//to String
+	public String toString(){
+		String answer = "\nCaja de resonancia: " + box.toString() + 
+		"\nTeclado: " + keyboard.toString() +
+		"\nOrientacion: " + orientation;
+
+		return answer;
+	}
+
 }

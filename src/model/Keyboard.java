@@ -44,4 +44,14 @@ public class Keyboard{
 	}
 
 
+	//to String
+	public String toString(){
+		String answer = "\nCantidad de octavas: " + amountOctavas +
+		"\nMaterial: " + material +
+		"\nDimensiones del teclado: " + dimensionsKeyboard.toString();
+
+		return answer;
+	}
+
+
 }

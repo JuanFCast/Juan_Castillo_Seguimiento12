@@ -5,8 +5,8 @@ public class Box{
 	private Dimension dimensionsBox;
 
 	//constructor
-	public Box(double height, double length, double width){
-		dimensionsBox = new Dimension(height, length, width);
+	public Box(Dimension dimensionsBox){
+		this.dimensionsBox = dimensionsBox;
 	}
 
 
@@ -19,6 +19,14 @@ public class Box{
 	//set
 	public void setDimensionsBox(Dimension dimensionsBox){
 		this.dimensionsBox = dimensionsBox;
+	}
+	
+
+	//to String
+	public String toString(){
+		String answer = "\nDimensiones de la caja: " + dimensionsBow.toString();
+
+		return answer;
 	}
 
 

@@ -42,4 +42,14 @@ public class Distributor{
 	public void setPhone(String phone){
 		this.phone = phone;
 	}
+
+
+	//to String
+	public String toString(){
+		String answer = "\nNombre del distribuidor: " + name +
+		"\nDireccion del distribuidor: " + address +
+		"\nTelefono: " + phone;
+
+		return answer;
+	}
 }

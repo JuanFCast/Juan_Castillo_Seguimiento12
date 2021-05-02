@@ -5,11 +5,12 @@ public class Percussedstruments extends PercussionInstruments{
 	private ExternalElements elements;
 
 	//constructor
-	public Percussedstruments(String nameElement, String material, int amountInstruments, double heightE, double lengthE, double widthE, String name, String idNumber, double height, double length, double width, String nameDistributor, String address, String phone, Place places){
-		super (name, idNumber, height, length, width, nameDistributor, address, phone, places);
-		elements = new ExternalElements(nameElement, material, amountInstruments, heightE, lengthE, widthE);
-
+	public Percussedstruments(ExternalElements elements, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
+		super (name, idNumber, dimensions, distributorCompany, places);
+		this.elements = elements;
 	}
+
+	
 
 	//get
 	public ExternalElements getElements(){
@@ -21,6 +22,13 @@ public class Percussedstruments extends PercussionInstruments{
 	public void setElements(ExternalElements elements){
 		this.elements = elements;
 	} 
+
+	//to String
+	public String toString(){
+		String answer = "\nElementos externos: " + elements.toString();
+
+		return answer;
+	}
 
 
 }

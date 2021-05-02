@@ -8,7 +8,7 @@ public class PluckedSInstruments extends StringInstruments{
 
 
 	//constructor
-	public PluckedSInstruments(int stringsNumber, int fretsNumber, boolean haveCase, String name, String idNumber, double height, double length, double width, String nameDistributor, String address, String phone, Place places){
+	public PluckedSInstruments(int stringsNumber, int fretsNumber, boolean haveCase, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
 		super (name, idNumber, height, length, width, nameDistributor, address, phone, places);
 		this.stringsNumber = stringsNumber;
 		this.fretsNumber = fretsNumber;
@@ -42,6 +42,16 @@ public class PluckedSInstruments extends StringInstruments{
 	public void setHaveCase(boolean haveCase){
 		this.haveCase = haveCase;
 	} 
+
+
+	//to String
+	public String toString(){
+		String answer = "\nCantidad de cuerdas: " + stringsNumber + 
+		"\nCantidad de trastes: " + fretsNumber +
+		"\nEstuche: " + haveCase;
+
+		return answer;
+	}
 
 
 }

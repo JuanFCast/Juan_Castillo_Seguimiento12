@@ -10,11 +10,11 @@ public class ExternalElements{
 
 
 	//constructor
-	public ExternalElements(String name, String material, int amountInstruments, double height, double length, double width){
+	public ExternalElements(String name, String material, int amountInstruments, Dimension dimensionsElements){
 		this.name = name;
 		this.material = material;
 		this.amountInstruments = amountInstruments;
-		dimensionsElements = new Dimension(height, length, width);
+		this.dimensionsElements = dimensionsElements;
 	}
 
 
@@ -53,5 +53,15 @@ public class ExternalElements{
 		this.dimensionsElements = dimensionsElements;
 	}
 
+
+	//to String
+	public String toString(){
+		String answer = "\nNombre: " + hight +
+		"\nMaterial: " + length +
+		"\nCantidad requerida para tocar el instrumento: " + width + 
+		"\nDimensiones: " + dimensionsElements.toString();
+
+		return answer;
+	}
 
 }

@@ -5,8 +5,8 @@ public class WindInstruments extends Instruments{
 	private Material material;
 
 	//constructor
-	public WindInstruments(Material material, String name, String idNumber, double height, double length, double width, String nameDistributor, String address, String phone, Place places){
-		super (name, idNumber, height, length, width, nameDistributor, address, phone, places);
+	public WindInstruments(Material material, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
+		super (name, idNumber, dimensions, distributorCompany, places);
 		this.material = material;
 
 	}
@@ -21,5 +21,12 @@ public class WindInstruments extends Instruments{
 	public void setMaterial(Material material){
 		this.material = material;
 	} 
+
+	//to String
+	public String toString(){
+		String answer = "\nMaterial: " + material;
+
+		return answer;
+	}
 
 }

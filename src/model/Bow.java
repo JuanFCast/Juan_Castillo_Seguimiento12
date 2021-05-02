@@ -5,8 +5,8 @@ public class Box{
 	private Dimension dimensionsBow;
 
 	//constructor
-	public Box(double height, double length, double width){
-		dimensionsBow = new Dimension(height, length, width);
+	public Bow(Dimension dimensionsBow){
+		this.dimensionsBow = dimensionsBow;
 	}
 
 
@@ -19,6 +19,13 @@ public class Box{
 	//set
 	public void setDimensionsBow(Dimension dimensionsBow){
 		this.dimensionsBow = dimensionsBow;
+	}
+
+	//to String
+	public String toString(){
+		String answer = "\nDimensiones del arco: " + dimensionsBow.toString();
+
+		return answer;
 	}
 
 

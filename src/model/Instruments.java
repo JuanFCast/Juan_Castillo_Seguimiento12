@@ -10,11 +10,11 @@ public class Instruments{
 	protected Place places;
 
 	//constructor
-	public Instruments(String name, String idNumber, double height, double length, double width, String nameDistributor, String address, String phone, Place places){
+	public Instruments(String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
 		this.name = name;
 		this.idNumber = idNumber;
-		dimensions = new Dimension(height, length, width);
-		distributorCompany = new Distributor(nameDistributor, address, phone);
+		this.dimensions = dimensions;
+		this.distributorCompany = distributorCompany;
 		this.places = places;
 	}
 
@@ -63,5 +63,13 @@ public class Instruments{
 	}
 
 	//to String
+	public String toString(){
+		String answer = "\nNombre: " + name +
+		"\nID: " + idNumber +
+		"\nDimensiones: " + dimensions.toString() +
+		"\nDistribuidor: " + distributorCompany.toString() +
+		"\nUbicacion: " + places;
 
+		return answer;
+	}
 }
