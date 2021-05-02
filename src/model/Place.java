@@ -1,6 +1,6 @@
 package model;
 
 public enum Place{
-	TIENDA, EXCIBICION, DISTRIBUIDOR;
+	TIENDA, EXCIBICION, DISTRIBUIDOR
 
 }

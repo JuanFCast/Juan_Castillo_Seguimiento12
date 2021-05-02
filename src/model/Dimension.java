@@ -2,23 +2,23 @@ package model;
 
 public class Dimension{
 
-	private double high;
+	private double hight;
 	private double length;
 	private double width;
 
 	// relaciones
 
 	//constructor
-	public Donor(double high, double length, double width){
-		this.high   = high;
+	public Dimension(double hight, double length, double width){
+		this.hight   = hight;
 		this.length = length;
 		this.width  = width;
 	}
 
 
 	//get
-	public double getHigh(){
-		return high;
+	public double getHight(){
+		return hight;
 	}
 
 	public double getLength(){
@@ -31,8 +31,8 @@ public class Dimension{
 
 
 	//set
-	public void setHigh(double aHigh){
-		this.high = high;
+	public void setHight(double aHight){
+		this.hight = hight;
 	} 
 
 	public void setLength(double aLength){

@@ -9,7 +9,7 @@ public class Distributor{
 	// relaciones
 
 	//constructor
-	public Donor(String name, String address, String phone){
+	public Distributor(String name, String address, String phone){
 		this.name   = name;
 		this.address = address;
 		this.phone  = phone;

@@ -1,19 +1,67 @@
 package model;
 
 public class Instruments{
-	private String idNumber;
+	protected String name;
+	protected String idNumber;
 
 	// relaciones
-	private Dimension dimensions;
-	private Distributor distributorCompany;
-	private Place places;
+	protected Dimension dimensions;
+	protected Distributor distributorCompany;
+	protected Place places;
 
 	//constructor
-	public Instruments(String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
+	public Instruments(String name, String idNumber, double height, double length, double width, String nameDistributor, String address, String phone, Place places){
+		this.name = name;
 		this.idNumber = idNumber;
-		this.dimensions = dimensions;
-		this.distributorCompany = distributorCompany;
+		dimensions = new Dimension(height, length, width);
+		distributorCompany = new Distributor(nameDistributor, address, phone);
 		this.places = places;
 	}
+
+	//get
+	public String getName(){
+		return name;
+	}
+
+	public String getIdNumber(){
+		return idNumber;
+	}
+
+	public Dimension getDimensions(){
+		return dimensions;
+	}
+
+	public Distributor getDistributorCompany(){
+		return distributorCompany;
+	}
+
+	public Place getPlaces(){
+		return places;
+	}
+
+
+
+	//set
+	public void setNameh(double aName){
+		this.name = name;
+	} 
+
+	public void setLength(double aIdNumber){
+		this.idNumber = idNumber;
+	} 
+
+	public void setDimensions(Dimension aDimensions){
+		this.dimensions = dimensions;
+	}
+
+	public void setDistributorCompany(Distributor aDistributorCompany){
+		this.distributorCompany = distributorCompany;
+	}
+
+	public void setPlaces(Place aPlaces){
+		this.places = places;
+	}
+
+	//to String
 
 }
