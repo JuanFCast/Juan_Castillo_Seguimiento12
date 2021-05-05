@@ -42,7 +42,7 @@ public class Main{
 		instruments[1] = new WavingInstruments("Madera", "MARACAS", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
 		instruments[2] = new WindInstruments(Material.WOODEN, "FLAUTA", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.EXCIBICION);
 		instruments[3] = new RubbedSInstruments(4, new Bow(new Dimension(5, 2, 3)), "VIOLOCHENLO", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
-		instruments[4] = new PluckedSInstruments(4, 5, new Boolean(true), "GUITARRA", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.EXCIBICION);
+		instruments[4] = new PluckedSInstruments(4, 5, true, "GUITARRA", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.EXCIBICION);
 		instruments[5] = new PercussionSIntruments(new Box(new Dimension(5, 2, 3)), new Keyboard(5, "Bronce", new Dimension(5, 2, 3)), Orientation.HORIZONTAL, "PIANO", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
 		System.out.println(instruments[0].toString());
 		System.out.println("******************************************************");
