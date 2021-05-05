@@ -8,10 +8,10 @@ public class PercussionSIntruments extends StringInstruments{
 	private Orientation orientation;
 
 	//constructor
-	public PercussionSIntruments(double heightBox, double lengthBox, double widthBox, double heightKey, double lengthKey, double widthKey, int amountOctavas, String material, Orientation orientation, String name, String idNumber, double height, double length, double width, String nameDistributor, String address, String phone, Place places){
-		super (name, idNumber, height, length, width, nameDistributor, address, phone, places);
-		box = new Box(heightBox, lengthBox, widthBox);
-		keyboard = new Keyboard(heightKey, lengthKey, widthKey, amountOctavas, material);
+	public PercussionSIntruments(Box box, Keyboard keyboard, Orientation orientation, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
+		super (name, idNumber, dimensions, distributorCompany, places);
+		this.box = box;
+		this.keyboard = keyboard;
 		this.orientation = orientation;
 	}
 
@@ -45,8 +45,20 @@ public class PercussionSIntruments extends StringInstruments{
 
 	//to String
 	public String toString(){
-		String answer = "\nCaja de resonancia: " + box.toString() + 
+		String answer = "Tipo: Instrumentos de cuerdas FROTADAS" +
+		"\nNombre: " + name +
+		"\nID: " + idNumber +
+		"\n----------------------------" +
+		"\nDimensiones: " + dimensions.toString() +
+		"\n----------------------------" +
+		"\nDistribuidor: " + distributorCompany.toString() +
+		"\n----------------------------" +
+		"\nUbicacion: " + places +
+		"\n----------------------------" +
+		"\nCaja de resonancia: " + box.toString() + 
+		"\n----------------------------" +
 		"\nTeclado: " + keyboard.toString() +
+		"\n----------------------------" +
 		"\nOrientacion: " + orientation;
 
 		return answer;

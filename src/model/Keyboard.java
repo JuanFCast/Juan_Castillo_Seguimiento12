@@ -8,10 +8,10 @@ public class Keyboard{
 	private Dimension dimensionsKeyboard;
 
 	//constructor
-	public Keyboard(int amountOctavas, String material, double height, double length, double width){
+	public Keyboard(int amountOctavas, String material, Dimension dimensionsKeyboard){
 		this.amountOctavas = amountOctavas;
 		this.material = material;
-		dimensionsKeyboard = new Dimension(height, length, width);
+		this.dimensionsKeyboard = dimensionsKeyboard;
 	}
 
 

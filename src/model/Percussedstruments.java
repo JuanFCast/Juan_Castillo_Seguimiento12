@@ -24,11 +24,20 @@ public class Percussedstruments extends PercussionInstruments{
 	} 
 
 	//to String
+	@Override
 	public String toString(){
-		String answer = "\nElementos externos: " + elements.toString();
+		String answer = "Tipo: Instrumentos de percusion PERCUTIDOS" +
+		"\nNombre: " + name +
+		"\nID: " + idNumber +
+		"\n----------------------------" +
+		"\nDimensiones: " + dimensions.toString() +
+		"\n----------------------------" +
+		"\nDistribuidor: " + distributorCompany.toString() +
+		"\n----------------------------" +
+		"\nUbicacion: " + places +
+		"\n----------------------------" +
+		"\nElementos externos: " + elements.toString();
 
 		return answer;
 	}
-
-
 }

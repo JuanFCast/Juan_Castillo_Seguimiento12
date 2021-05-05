@@ -9,7 +9,7 @@ public class PluckedSInstruments extends StringInstruments{
 
 	//constructor
 	public PluckedSInstruments(int stringsNumber, int fretsNumber, boolean haveCase, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
-		super (name, idNumber, height, length, width, nameDistributor, address, phone, places);
+		super (name, idNumber, dimensions, distributorCompany, places);
 		this.stringsNumber = stringsNumber;
 		this.fretsNumber = fretsNumber;
 		this.haveCase = haveCase;
@@ -46,9 +46,22 @@ public class PluckedSInstruments extends StringInstruments{
 
 	//to String
 	public String toString(){
-		String answer = "\nCantidad de cuerdas: " + stringsNumber + 
+		String answer =  "Tipo: Instrumentos de cuerdas FROTADAS" +
+		"\nNombre: " + name +
+		"\nID: " + idNumber +
+		"\n----------------------------" +
+		"\nDimensiones: " + dimensions.toString() +
+		"\n----------------------------" +
+		"\nDistribuidor: " + distributorCompany.toString() +
+		"\n----------------------------" +
+		"\nUbicacion: " + places +
+		"\n----------------------------" +
+		"\nCantidad de cuerdas: " + stringsNumber + 
+		"\n----------------------------" +
 		"\nCantidad de trastes: " + fretsNumber +
+		"\n----------------------------" +
 		"\nEstuche: " + haveCase;
+
 
 		return answer;
 	}

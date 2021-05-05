@@ -35,9 +35,22 @@ public class RubbedSInstruments extends StringInstruments{
 
 
 	//to String
+	@Override
 	public String toString(){
-		String answer = "\nCantidad de cuerdas: " + stringsNumber + 
+		String answer = "Tipo: Instrumentos de cuerdas FROTADAS" +
+		"\nNombre: " + name +
+		"\nID: " + idNumber +
+		"\n----------------------------" +
+		"\nDimensiones: " + dimensions.toString() +
+		"\n----------------------------" +
+		"\nDistribuidor: " + distributorCompany.toString() +
+		"\n----------------------------" +
+		"\nUbicacion: " + places +
+		"\n----------------------------" +
+		"\nCantidad de cuerdas: " + stringsNumber +
+		"\n----------------------------" +
 		"\nArco: " + bow.toString();
+		
 
 		return answer;
 	}

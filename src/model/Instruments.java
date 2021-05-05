@@ -42,11 +42,11 @@ public class Instruments{
 
 
 	//set
-	public void setName(double name){
+	public void setName(String name){
 		this.name = name;
 	} 
 
-	public void setLength(double idNumber){
+	public void setLength(String idNumber){
 		this.idNumber = idNumber;
 	} 
 

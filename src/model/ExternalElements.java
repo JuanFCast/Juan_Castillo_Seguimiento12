@@ -56,9 +56,9 @@ public class ExternalElements{
 
 	//to String
 	public String toString(){
-		String answer = "\nNombre: " + hight +
-		"\nMaterial: " + length +
-		"\nCantidad requerida para tocar el instrumento: " + width + 
+		String answer = "\nNombre: " + name +
+		"\nMaterial: " + material +
+		"\nCantidad requerida para tocar el instrumento: " + amountInstruments + 
 		"\nDimensiones: " + dimensionsElements.toString();
 
 		return answer;

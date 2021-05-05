@@ -24,7 +24,7 @@ public class Box{
 
 	//to String
 	public String toString(){
-		String answer = "\nDimensiones de la caja: " + dimensionsBow.toString();
+		String answer = "\nDimensiones de la caja: " + dimensionsBox.toString();
 
 		return answer;
 	}

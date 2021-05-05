@@ -1,6 +1,6 @@
 package model;
 
-public class Box{
+public class Bow{
 	// relaciones
 	private Dimension dimensionsBow;
 

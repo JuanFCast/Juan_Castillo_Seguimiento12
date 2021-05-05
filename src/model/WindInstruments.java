@@ -22,9 +22,21 @@ public class WindInstruments extends Instruments{
 		this.material = material;
 	} 
 
+	
 	//to String
+	@Override
 	public String toString(){
-		String answer = "\nMaterial: " + material;
+		String answer = "Tipo: Instrumentos de viento" +
+		"\nNombre: " + name +
+		"\nID: " + idNumber +
+		"\n----------------------------" +
+		"\nDimensiones: " + dimensions.toString() +
+		"\n----------------------------" +
+		"\nDistribuidor: " + distributorCompany.toString() +
+		"\n----------------------------" +
+		"\nUbicacion: " + places +
+		"\n----------------------------" +
+		"\nMaterial: " + material;
 
 		return answer;
 	}
