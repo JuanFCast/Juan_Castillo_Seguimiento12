@@ -67,8 +67,6 @@ public class Main{
 
 			
 		}
-		System.out.println((Box)point.getInstruments()[5].getBox().getDimensionsBox().getHight());
-	 	System.out.println(point.getInstruments()[5].getDimensionKeyboard().getHight());
 	}
 
 }

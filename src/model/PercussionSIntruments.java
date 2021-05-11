@@ -8,7 +8,7 @@ public class PercussionSIntruments extends StringInstruments{
 	private Box box;
 	private Keyboard keyboard;
 	private Orientation orientation;
-
+	private double totalDimensions;
 
 	//constructor
 	public PercussionSIntruments(Box box, Keyboard keyboard, Orientation orientation, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
@@ -16,7 +16,7 @@ public class PercussionSIntruments extends StringInstruments{
 		this.box = box;
 		this.keyboard = keyboard;
 		this.orientation = orientation;
-		//totalDimension = 
+		totalDimensions = (keyboard.getDimensionsKeyboard().getHight()) + (keyboard.getDimensionsKeyboard().getLength()) + (keyboard.getDimensionsKeyboard().getWidth()) + (box.getDimensionsBox().getHight()) + (box.getDimensionsBox().getLength()) + (box.getDimensionsBox().getWidth());
 	}
 
 	//get
@@ -63,7 +63,9 @@ public class PercussionSIntruments extends StringInstruments{
 		"\n----------------------------" +
 		"\nTeclado: " + keyboard.toString() +
 		"\n----------------------------" +
-		"\nOrientacion: " + orientation;
+		"\nOrientacion: " + orientation + 
+		"\n----------------------------" +
+		"\nTotal dimensiones de la caja de resonancia + teclado: " + totalDimensions;
 
 		return answer;
 	}
