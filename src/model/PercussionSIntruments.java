@@ -2,10 +2,13 @@ package model;
 
 public class PercussionSIntruments extends StringInstruments{
 
+	//private double totalDimensions;
+
 	// relaciones
 	private Box box;
 	private Keyboard keyboard;
 	private Orientation orientation;
+
 
 	//constructor
 	public PercussionSIntruments(Box box, Keyboard keyboard, Orientation orientation, String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){
@@ -13,6 +16,7 @@ public class PercussionSIntruments extends StringInstruments{
 		this.box = box;
 		this.keyboard = keyboard;
 		this.orientation = orientation;
+		//totalDimension = 
 	}
 
 	//get
@@ -45,7 +49,7 @@ public class PercussionSIntruments extends StringInstruments{
 
 	//to String
 	public String toString(){
-		String answer = "Tipo: Instrumentos de cuerdas FROTADAS" +
+		String answer = "Tipo: Instrumentos de cuerdas PERCUTIDAS" +
 		"\nNombre: " + name +
 		"\nID: " + idNumber +
 		"\n----------------------------" +

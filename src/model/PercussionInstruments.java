@@ -1,6 +1,6 @@
 package model;
 
-public class PercussionInstruments extends Instruments{
+public abstract class PercussionInstruments extends Instruments{
 
 	//constructor
 	public PercussionInstruments(String name, String idNumber, Dimension dimensions, Distributor distributorCompany, Place places){

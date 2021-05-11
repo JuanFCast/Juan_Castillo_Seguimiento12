@@ -1,6 +1,6 @@
 package model;
 
-public class Instruments{
+public abstract class Instruments{
 	protected String name;
 	protected String idNumber;
 

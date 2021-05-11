@@ -46,7 +46,7 @@ public class PluckedSInstruments extends StringInstruments{
 
 	//to String
 	public String toString(){
-		String answer =  "Tipo: Instrumentos de cuerdas FROTADAS" +
+		String answer =  "Tipo: Instrumentos de cuerdas PULSADA" +
 		"\nNombre: " + name +
 		"\nID: " + idNumber +
 		"\n----------------------------" +
