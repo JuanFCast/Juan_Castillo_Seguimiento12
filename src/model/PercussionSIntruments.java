@@ -65,9 +65,8 @@ public class PercussionSIntruments extends StringInstruments{
 		"\n----------------------------" +
 		"\nOrientacion: " + orientation + 
 		"\n----------------------------" +
-		"\nTotal dimensiones de la caja de resonancia + teclado: " + totalDimensions;
+		"\nTotal dimensiones de la Caja de Resonancia + Teclado: " + totalDimensions;
 
 		return answer;
 	}
-
 }

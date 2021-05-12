@@ -49,12 +49,12 @@ public class Main{
 		System.out.println("---------------------------------------------------------------------");
 
     	Instruments[] instruments = new Instruments[6];
-		instruments[0] = new Percussedstruments(new ExternalElements("Baquetas", "Madera", 2, new Dimension(5, 2, 3)), "XILOFONO", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
-		instruments[1] = new WavingInstruments("Madera", "MARACAS", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
-		instruments[2] = new WindInstruments(Material.WOODEN, "FLAUTA", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.EXCIBICION);
-		instruments[3] = new RubbedSInstruments(4, new Bow(new Dimension(5, 2, 3)), "VIOLOCHENLO", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
-		instruments[4] = new PluckedSInstruments(4, 5, true, "GUITARRA", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.EXCIBICION);
-		instruments[5] = new PercussionSIntruments(new Box(new Dimension(5, 2, 3)), new Keyboard(5, "Bronce", new Dimension(5, 2, 3)), Orientation.HORIZONTAL, "PIANO", "123", new Dimension(5, 2, 3), new Distributor("Pedro", "En su casa", "30145"), Place.TIENDA);
+		instruments[0] = new Percussedstruments(new ExternalElements("Baquetas", "Madera", 2, new Dimension(40, 40, 1.4)), "XILOFONO", "1006071586", new Dimension(38, 1.5, 4.5), new Distributor("Pipe", "Carrera 47 #11-72", "30145"), Place.TIENDA);
+		instruments[1] = new WavingInstruments("Madera", "MARACAS", "1006071585", new Dimension(25, 25, 8), new Distributor("Pipe", "Carrera 47 #11-72", "30145"), Place.TIENDA);
+		instruments[2] = new WindInstruments(Material.WOODEN, "FLAUTA", "1508271585", new Dimension(67, 67, 19), new Distributor("Pipe", "Carrera 47 #11-72", "30145"), Place.EXCIBICION);
+		instruments[3] = new RubbedSInstruments(4, new Bow(new Dimension(5, 2, 3)), "VIOLOCHENLO", "2508271585", new Dimension(7, 2, 3), new Distributor("Pipe", "Carrera 47 #11-72", "30145"), Place.DISTRIBUIDOR);
+		instruments[4] = new PluckedSInstruments(4, 5, true, "GUITARRA", "158881585", new Dimension(5, 2, 3), new Distributor("Pipe", "Carrera 47 #11-72", "30145"), Place.EXCIBICION);
+		instruments[5] = new PercussionSIntruments(new Box(new Dimension(5, 2, 3)), new Keyboard(5, "Bronce", new Dimension(5, 2, 3)), Orientation.HORIZONTAL, "PIANO", "1508271585", new Dimension(5, 2, 3), new Distributor("Pipe", "Carrera 47 #11-72", "30145"), Place.TIENDA);
 
 		point.setInstruments(instruments);
 
