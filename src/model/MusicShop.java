@@ -22,7 +22,37 @@ public class MusicShop{
 	public void setInstruments(Instruments [] instruments){
 		this.instruments = instruments;
 	} 
+
+
+
+	//metodos
+	public void addInstrumens (Instruments obj)
+	{
+		for (int i = 0; 1 < instruments.length; i++)
+		{
+			if (instruments[i] == null)
+			{
+				instruments[i] = obj;
+
+			}
+		}
+	}
 	
+
+
+	public String ShowInstruments ()
+	{
+		String out = "";
+		for (int i = 0; 1 < instruments.length; i++)
+		{
+			if (instruments[i] == null)
+			{
+				out += instruments[i].toString();
+
+			}
+		}
+		return out;
+	}
 	
 
 	
